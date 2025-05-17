@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/b01_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/c01_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/d01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/e01_page_ui.dart';
 
 class HomeUI extends StatelessWidget {
@@ -93,7 +95,14 @@ class HomeUI extends StatelessWidget {
 
                 //BT Go To C Page
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => C01PageUI(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'Go To C Page',
                     style: TextStyle(
@@ -119,7 +128,14 @@ class HomeUI extends StatelessWidget {
 
                 //BT Go To D Page
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => D01PageUI(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'Go To D Page',
                     style: TextStyle(
