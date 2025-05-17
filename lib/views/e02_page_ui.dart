@@ -1,6 +1,8 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e04_page_ui.dart';
 
 class E02PageUi extends StatefulWidget {
   const E02PageUi({super.key});
@@ -96,7 +98,14 @@ class _E02PageUiState extends State<E02PageUi> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => E04PageUI(),
+                          ),
+                        );
+                      },
                       child: Text('Forgot Password'),
                     ),
                   ),
@@ -167,7 +176,12 @@ class _E02PageUiState extends State<E02PageUi> {
                         ),
                       GestureDetector(
                         onTap: () {
-                          // ไปหน้า Create Account
+                          Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => E03PageUi(),
+                        ),
+                          );
                         },
                         child: Text(
                           "Create Account",
@@ -179,6 +193,9 @@ class _E02PageUiState extends State<E02PageUi> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                  height: 30.0,
+                ),
                 ],
               ),
             ),
