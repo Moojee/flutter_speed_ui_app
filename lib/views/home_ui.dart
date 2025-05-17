@@ -1,8 +1,8 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/e01_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e02_page_ui.dart';
 
 class HomeUI extends StatelessWidget {
   const HomeUI({super.key});
@@ -28,7 +28,14 @@ class HomeUI extends StatelessWidget {
 
                 //BT Go To A Page
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => A01PageUi(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'Go To A Page',
                     style: TextStyle(
